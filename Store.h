@@ -12,23 +12,10 @@ private:
 
 
 public:
-  Store (string i, double p) {
-    itemName = i ;
-    price = p;
-  };
-
-void setItemName(string i){
-  (ItemName = i;)
-};
-void setPrice(double p){
-  (Price = p;)
-};
-string getItemName() const{
-  (return ItemName;)
-};
-int getPrice() const{
-  (return Price;)
-};
-};
+  Store(string, double);
+  void setItemName(string);
+  void setPrice(double);
+  void getItemName() const;
+  double getPrice() const;
 
 #endif

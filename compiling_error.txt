@@ -1,0 +1,139 @@
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/Customer.cpp: In copy constructor ‘Customer::Customer(const Customer&)’:
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/Customer.cpp:22:21: error: no matching function for call to ‘Customer::Customer()’
+ Customer::~Customer(){             // destructor
+                     ^
+In file included from /home/dexisidus/Documents/COSC237/MyFinal/Final-Project/Customer.cpp:1:0:
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/Customer.h:21:3: note: candidate: Customer::~Customer()
+   ~Customer(); // deconstructor
+   ^
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/Customer.h:21:3: note:   candidate expects 1 argument, 0 provided
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/Customer.cpp:26:22: error: qualified-id in declaration before ‘(’ token
+ bool Customer::isFull() const{
+                      ^
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/Customer.cpp:36:23: error: qualified-id in declaration before ‘(’ token
+ bool Customer::isEmpty() const{
+                       ^
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/Customer.cpp:45:27: error: qualified-id in declaration before ‘(’ token
+ void Customer::add_to_cart(string i){
+                           ^
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/Customer.cpp:69:1: error: expected ‘}’ at end of input
+ }
+ ^
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp: In function ‘int main()’:
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:23:14: error: use of deleted function ‘LuckyStore::LuckyStore()’
+   LuckyStore Lucky;
+              ^~~~~
+In file included from /home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:2:0:
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/LuckyStore.h:12:7: note: ‘LuckyStore::LuckyStore()’ is implicitly deleted because the default definition would be ill-formed:
+ class LuckyStore : public Store{
+       ^~~~~~~~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/LuckyStore.h:12:7: error: no matching function for call to ‘Store::Store()’
+In file included from /home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:1:0:
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/Store.h:15:3: note: candidate: Store::Store(std::__cxx11::string, double)
+   Store (string i, double p) {
+   ^~~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/Store.h:15:3: note:   candidate expects 2 arguments, 0 provided
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/Store.h:8:7: note: candidate: Store::Store(const Store&)
+ class Store{
+       ^~~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/Store.h:8:7: note:   candidate expects 1 argument, 0 provided
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/Store.h:8:7: note: candidate: Store::Store(Store&&)
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/Store.h:8:7: note:   candidate expects 1 argument, 0 provided
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp: In function ‘void getItemAndCost()’:
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:36:10: error: ‘queueLen’ was not declared in this scope
+   cin >> queueLen;
+          ^~~~~~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:38:21: error: expected ‘;’ before ‘<’ token
+   for (int i = 0, i < queuelen, i++){
+                     ^
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:38:21: error: expected primary-expression before ‘<’ token
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:38:23: error: ‘queuelen’ was not declared in this scope
+   for (int i = 0, i < queuelen, i++){
+                       ^~~~~~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:38:23: note: suggested alternative: ‘queue’
+   for (int i = 0, i < queuelen, i++){
+                       ^~~~~~~~
+                       queue
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:38:36: error: expected ‘;’ before ‘)’ token
+   for (int i = 0, i < queuelen, i++){
+                                    ^
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:40:12: error: ‘item’ was not declared in this scope
+     cin >> item;
+            ^~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:40:12: note: suggested alternative: ‘tm’
+     cin >> item;
+            ^~~~
+            tm
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:43:14: error: ‘num_of_items’ was not declared in this scope
+       cin >> num_of_items;
+              ^~~~~~~~~~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:44:7: error: ‘item_total’ was not declared in this scope
+       item_total = 30 * num_of_items;
+       ^~~~~~~~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:44:7: note: suggested alternative: ‘timelocal’
+       item_total = 30 * num_of_items;
+       ^~~~~~~~~~
+       timelocal
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:45:7: error: ‘total_cost’ was not declared in this scope
+       total_cost += item_total
+       ^~~~~~~~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:45:7: note: suggested alternative: ‘localeconv’
+       total_cost += item_total
+       ^~~~~~~~~~
+       localeconv
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:49:14: error: ‘num_of_items’ was not declared in this scope
+       cin >> num_of_items;
+              ^~~~~~~~~~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:50:7: error: ‘item_total’ was not declared in this scope
+       item_total = 20 * num_of_items;
+       ^~~~~~~~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:50:7: note: suggested alternative: ‘timelocal’
+       item_total = 20 * num_of_items;
+       ^~~~~~~~~~
+       timelocal
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:51:7: error: ‘total_cost’ was not declared in this scope
+       total_cost += item_total;
+       ^~~~~~~~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:51:7: note: suggested alternative: ‘localeconv’
+       total_cost += item_total;
+       ^~~~~~~~~~
+       localeconv
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:55:14: error: ‘num_of_items’ was not declared in this scope
+       cin >> num_of_items;
+              ^~~~~~~~~~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:56:7: error: ‘item_total’ was not declared in this scope
+       item_total = 15 * num_of_items;
+       ^~~~~~~~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:56:7: note: suggested alternative: ‘timelocal’
+       item_total = 15 * num_of_items;
+       ^~~~~~~~~~
+       timelocal
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:57:7: error: ‘total_cost’ was not declared in this scope
+       total_cost += item_total
+       ^~~~~~~~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:57:7: note: suggested alternative: ‘localeconv’
+       total_cost += item_total
+       ^~~~~~~~~~
+       localeconv
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:61:14: error: ‘num_of_items’ was not declared in this scope
+       cin >> num_of_items;
+              ^~~~~~~~~~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:62:7: error: ‘item_total’ was not declared in this scope
+       item_total = 25 * num_of_items;
+       ^~~~~~~~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:62:7: note: suggested alternative: ‘timelocal’
+       item_total = 25 * num_of_items;
+       ^~~~~~~~~~
+       timelocal
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:63:7: error: ‘total_cost’ was not declared in this scope
+       total_cost += item_total
+       ^~~~~~~~~~
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:63:7: note: suggested alternative: ‘localeconv’
+       total_cost += item_total
+       ^~~~~~~~~~
+       localeconv
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:65:27: error: expected ‘}’ at end of input
+       if (item == "skirt"){
+                           ^
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:65:27: error: expected ‘}’ at end of input
+/home/dexisidus/Documents/COSC237/MyFinal/Final-Project/main.cpp:65:27: error: expected ‘}’ at end of input

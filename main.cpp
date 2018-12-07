@@ -31,39 +31,6 @@ int main(){
 return 0;
 }
 
-void getItemAndCost(){
-  cout << "From the items you see, how many different clothing types do you want to buy. Type a Number (Not how many of each item you want)" << endl;
-  cin >> queueLen;
-  Customer queue (queueLen);
-  for (int i = 0, i < queuelen, i++){
-    cout << "Enter Item: (CASE AND SPACE SENSITIVE!)" << endl;
-    cin >> item;
-    if (item == "long sleeve"){
-      cout << "How many do you want" << endl;
-      cin >> num_of_items;
-      item_total = 30 * num_of_items;
-      total_cost += item_total
-    }
-    if (item == "short sleeve") {
-      cout << "How many do you want" << endl;
-      cin >> num_of_items;
-      item_total = 20 * num_of_items;
-      total_cost += item_total;
-    }
-    if (item == "shorts"){
-      cout << "How many do you want" << endl;
-      cin >> num_of_items;
-      item_total = 15 * num_of_items;
-      total_cost += item_total
-    }
-    if(item == "pants"){
-      cout << "How many do you want" << endl;
-      cin >> num_of_items;
-      item_total = 25 * num_of_items;
-      total_cost += item_total
-    }
-      if (item == "skirt"){
-
 
 
 
